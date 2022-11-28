@@ -1,0 +1,17 @@
+{
+    "name": "${name}",
+    "image": "nginx:${tag}",
+    "essential": true,
+    "cpu": 0,
+    "environment": [
+    ],
+    "secrets": [
+    ],
+    "portMappings": [
+        {
+            "hostPort": ${port},
+            "protocol": "tcp",
+            "containerPort": ${port}
+        }
+    ]
+}
