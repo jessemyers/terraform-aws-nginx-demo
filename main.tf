@@ -55,6 +55,6 @@ module "service" {
   name                  = var.name
   network               = var.network
   port                  = local.port
-  task_definition       = var.task_definition
+  task_definition       = module.task_definition
   zone                  = var.zone
 }
